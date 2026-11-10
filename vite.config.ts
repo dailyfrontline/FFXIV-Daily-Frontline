@@ -15,5 +15,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: '/FFIV-Daily-Frontline/'
+  base: '/FFXIV-Daily-Frontline/'
 })
