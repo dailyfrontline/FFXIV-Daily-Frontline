@@ -14,8 +14,18 @@ const attrs = ref([
   {
     key: 'today',
     highlight: {
-      color: 'blue',
+      color: 'green',
       fillMode: 'light',
+      style:{
+        border:'1px solid green',
+        borderRadius:'10%',
+        width:'100%',
+        height:'100%',
+        //boxShadow:'0 2px 4px #ccc',
+        //opacity:'0.8'
+        
+      }
+      // style & class?
     },
     dates: new Date(),
     customData: {

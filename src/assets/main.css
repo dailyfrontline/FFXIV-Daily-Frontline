@@ -31,3 +31,12 @@ a,
     padding: 0 2rem;
   }
 }
+
+.day-content {
+  text-align: center;
+  min-height: 70px;
+  background-color:rgba(95, 158, 160, 0.463);/*为了调试的时候看着方便*/
+  display: flexbox;
+  align-items: center;
+  line-height: 2;
+}
