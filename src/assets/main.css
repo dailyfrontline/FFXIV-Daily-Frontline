@@ -40,3 +40,28 @@ a,
   align-items: center;
   line-height: 2;
 }
+
+body{
+  background-color: #E8F3E8;
+}
+
+.container1 {
+  display: flex;
+  gap: 10px;
+}
+
+.left1, .right1 {
+  border: 1px;
+  border-radius: 15px;
+  background-color: white;
+  flex: 1;
+  text-align: center;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left1 {
+font-size: 50px;
+}

@@ -9,5 +9,7 @@ import { ref } from 'vue'
 const mapToday = ref(getMap(new Date()))
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
 

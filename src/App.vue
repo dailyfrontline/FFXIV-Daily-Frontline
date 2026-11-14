@@ -13,12 +13,16 @@ import QuickGlance from './components/QuickGlance.vue'
 <template>
   <header>
     <div class="wrapper">
-      <h1><QuickGlance /></h1>
+      <text>跳转今天|订阅本月</text> <!--先试试布局 这个功能还没做-->
     </div>
-    <section>
-      <div><Rotation /></div>
-      <div><Countdown /></div>
-    </section>
+
+    <div class="container1">
+      <div class="left1"><QuickGlance /></div>
+      <div class="right1"><Countdown /></div>      
+    </div>
+
+    <div class="container2"><Rotation /></div>
+
   </header>
 
   <main>

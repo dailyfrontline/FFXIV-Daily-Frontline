@@ -1,8 +1,10 @@
 <template>
   <div class="countdown">
-    <span>下次轮换：</span>
-    <span>{{ timeLeft }}</span>
-    <span>后</span>
+    <div class="countdown-text">
+      <div class="label">下次轮换：</div>
+      <span id="timer">{{ timeLeft }}</span>
+      <span class="label"> 后</span>
+    </div>
   </div>
 </template>
 
@@ -24,7 +26,18 @@ const timeLeft = computed(() => {
 
 <style scoped>
 .countdown {
-  display: flex;
-  flex-direction: row;
+display: flex;
+justify-content: center;
+}
+.countdown-text {
+text-align: left;
+}
+
+.label {
+font-size: 20px;
+}
+
+#timer {
+  font-size: 35px;
 }
 </style>
