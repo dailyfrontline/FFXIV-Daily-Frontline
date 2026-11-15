@@ -30,6 +30,7 @@ a,
 @media (max-width: 600px){
   .left1 {
     font-size: clamp(14px, 4vw, 24px);
+    background-color: red;
   }
 }  
 
