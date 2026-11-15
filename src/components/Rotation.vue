@@ -34,9 +34,11 @@ const currentIndex = ref(getMapIndex(today));
     border-radius: 5px;
     background-color: white;
     padding:5px;
+    flex-wrap: wrap;
 }
 .rotation-unit {
   border-radius: 5px;
+  white-space: nowrap;
   /*background-color: rgb(221, 222, 221);*/
 }
 </style>

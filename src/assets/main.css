@@ -27,6 +27,12 @@ a,
     place-items: center;
   }
 
+@media (max-width: 600px){
+  .left1 {
+    font-size: clamp(14px, 4vw, 24px);
+  }
+}  
+
   #app {
     padding: 0 2rem;
   }
@@ -48,6 +54,7 @@ body{
 .container1 {
   display: flex;
   gap: 10px;
+  min-width: 0;
 }
 
 .left1, .right1 {
@@ -63,6 +70,7 @@ body{
 }
 
 .left1 {
+  min-width: 0;
   font-size: 50px;
 }
 
