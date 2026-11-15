@@ -13,7 +13,7 @@ import QuickGlance from './components/QuickGlance.vue'
 <template>
   <header>
     <div class="wrapper">
-      <text>跳转今天|订阅本月</text> <!--先试试布局 这个功能还没做-->
+      <div class="functions">跳转今天 | 订阅本月</div> <!--先试试布局 这个功能还没做-->
     </div>
 
     <div class="container">
@@ -45,11 +45,12 @@ header {
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
 }
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 </style>

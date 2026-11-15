@@ -26,21 +26,6 @@ a,
     display: flex;
     place-items: center;
   }
-
-@media (max-width: 600px){
-  .left1 {
-    /*font-size: clamp(14px, 4vw, 24px);*/
-    font-size: 14px;
-    background-color: red;
-  }
-  body {
-    background-color: red;
-  }
-}  
-
-  #app {
-    padding: 0 2rem;
-  }
 }
 
 .day-content {
@@ -86,3 +71,11 @@ body{
   gap: 8px;
 }
 
+@media (max-width: 600px){
+  .left1 {
+    font-size: clamp(14px, 12vw, 45px);
+  }
+  #app {
+    padding: 0 2rem;
+  }
+}

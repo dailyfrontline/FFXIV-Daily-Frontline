@@ -3,7 +3,6 @@
     <div class="countdown-text">
       <div class="label">下次轮换：</div>
       <span id="timer">{{ timeLeft }}</span>
-      <span class="label"> 后</span>
     </div>
   </div>
 </template>
@@ -35,10 +34,10 @@ flex-wrap: nowrap;
 }
 
 .label {
-font-size: 20px;
+  font-size: clamp(14px, 5vw, 45px);
 }
 
 #timer {
-  font-size: 35px;
+  font-size: clamp(14px, 8vw, 45px);
 }
 </style>

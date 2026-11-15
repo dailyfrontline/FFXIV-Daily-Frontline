@@ -37,9 +37,14 @@ const currentIndex = ref(getMapIndex(today));
     padding:5px;
     flex-wrap: wrap;
 }
+.rotation span{
+    margin: 0 -5px;
+}
 .rotation-unit {
   border-radius: 5px;
   white-space: nowrap;
+  font-size: clamp(14px, 4vw, 40px);
+
   /*background-color: rgb(221, 222, 221);*/
 }
 </style>
