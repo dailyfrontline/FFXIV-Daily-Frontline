@@ -16,7 +16,7 @@ const today = new Date();
 //console.log(today)
 //console.log(getMap(today))
 //console.log(getMapIndex(today))
-alert(window.innerWidth);
+//alert(window.innerWidth); ==320
 const currentIndex = ref(getMapIndex(today));
 </script>
 
