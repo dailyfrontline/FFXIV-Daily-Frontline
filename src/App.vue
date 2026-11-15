@@ -16,12 +16,15 @@ import QuickGlance from './components/QuickGlance.vue'
       <text>跳转今天|订阅本月</text> <!--先试试布局 这个功能还没做-->
     </div>
 
-    <div class="container1">
-      <div class="left1"><QuickGlance /></div>
-      <div class="right1"><Countdown /></div>      
+    <div class="container">
+      <div class="container1">
+        <div class="left1"><QuickGlance /></div>
+        <div class="right1"><Countdown /></div>      
+      </div>
+
+      <div class="container2"><Rotation /></div>
     </div>
 
-    <div class="container2"><Rotation /></div>
 
   </header>
 
@@ -36,20 +39,11 @@ header {
   line-height: 1.5;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
 @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
   }
 
   header .wrapper {
