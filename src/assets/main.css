@@ -32,6 +32,9 @@ a,
     font-size: clamp(14px, 4vw, 24px);
     background-color: red;
   }
+  body {
+    background-color: red !important;
+  }
 }  
 
   #app {
