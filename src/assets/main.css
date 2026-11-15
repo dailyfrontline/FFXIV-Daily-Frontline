@@ -53,8 +53,8 @@ a,
 }
 
 body{
-  /*background-color: #E8F3E8;*/
-  background-color: red;  
+  background-color: #E8F3E8;
+  background-color: red !important;  
 }
 
 .container1 {
