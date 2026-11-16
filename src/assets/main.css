@@ -28,54 +28,10 @@ a,
   }
 }
 
-.day-content {
-  text-align: center;
-  min-height: 70px;
-  background-color:rgba(95, 158, 160, 0.463);/*为了调试的时候看着方便*/
-  display: flexbox;
-  align-items: center;
-  line-height: 2;
-}
+
 
 body{
   background-color: #E8F3E8;
   /*background-color: red !important;  */
 }
 
-.container1 {
-  display: flex;
-  gap: 10px;
-  min-width: 0;
-}
-
-.left1, .right1 {
-  border: 1px;
-  border-radius: 10px;
-  background-color: white;
-  flex: 1;
-  text-align: center;
-  min-height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left1 {
-  min-width: 0;
-  font-size: 50px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-@media (max-width: 600px){
-  .left1 {
-    font-size: clamp(14px, 12vw, 45px);
-  }
-  #app {
-    padding: 0 2rem;
-  }
-}
