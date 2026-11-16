@@ -24,7 +24,8 @@ const currentIndex = ref(getMapIndex(today));
 .highlight {
     font-weight: bold;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #529746;
+    background-color: #83C87773;
     padding-inline: 5px;
 }
 .rotation {
@@ -43,7 +44,7 @@ const currentIndex = ref(getMapIndex(today));
 .rotation-unit {
   border-radius: 5px;
   white-space: nowrap;
-  font-size: clamp(14px, 4vw, 40px);
+  font-size: clamp(14px, 4.5vw, 40px);
 
   /*background-color: rgb(221, 222, 221);*/
 }

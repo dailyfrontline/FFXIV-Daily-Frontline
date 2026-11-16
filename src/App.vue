@@ -4,52 +4,61 @@ import Countdown from './components/Countdown.vue'
 import Rotation from './components/Rotation.vue'
 import QuickGlance from './components/QuickGlance.vue'
 
-//todo: 距下次轮换时间 - DONE
-//todo：订阅日历——这个发布后再做吧
-//todo：UI优化；设备适配
-//* ？为啥我VCalendar的高光与day和day-content文字对不上
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <div class="functions">跳转今天 | 订阅本月</div> <!--先试试布局 这个功能还没做-->
-    </div>
-
     <div class="container">
       <div class="container1">
         <div class="left1"><QuickGlance /></div>
         <div class="right1"><Countdown /></div>      
       </div>
-
       <div class="container2"><Rotation /></div>
+      <div class="container3"><TheCalendar /></div>
     </div>
 
 
-  </header>
 
-  <main>
-
-    <TheCalendar />
-  </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-}
-
-.wrapper {
+.container {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container1 {
+  display: flex;
+  gap: 10px;
+  min-width: 0;
+}
+
+.left1, .right1 {
+  border: 1px;
+  border-radius: 10px;
+  background-color: white;
+  flex: 1;
+  text-align: center;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left1 {
+  min-width: 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px){
+  .left1 {
+    font-size: clamp(14px, 12vw, 45px);
+  }
+  #app {
+    padding: 0 2rem;
+  }
 }
 
 
