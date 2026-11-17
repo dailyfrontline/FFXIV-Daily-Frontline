@@ -37,7 +37,7 @@ import QuickGlance from './components/QuickGlance.vue'
 .left1, .right1 {
   border: 1px;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--bg-card);
   flex: 1;
   text-align: center;
   min-height: 120px;
@@ -60,6 +60,7 @@ import QuickGlance from './components/QuickGlance.vue'
     padding: 0 2rem;
   }
 }
+
 
 
 </style>

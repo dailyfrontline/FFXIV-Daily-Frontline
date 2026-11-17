@@ -28,9 +28,28 @@ a,
 }
 
 
-
-body{
-  background-color: #E8F3E8;
-  /*background-color: red !important;  */
+:root {
+  --bg-primary: #E8F3E8;/*E8F3E8*/
+  --bg-secondary: #e1ebe2;
+  --bg-card: white;
+  --text-primary: #263329;
+  --text-secondary: #657568;
+  --highlight: #83C87773;/*83C87773*/
+  --highlight-border: #529746;/*529746*/
+}
+body {
+  background-color: var(--bg-primary);
+  color:var(--text-primary);
 }
 
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg-primary: #263329;/*#263329  2c3a30 2b382f*/
+    --bg-secondary: #303B33;
+    --bg-card: #3b483e;/*#354238*/
+    --text-primary: #eef5ed;/*#E0E9DF*/
+    --text-secondary: #AAB9AA;    /*#AAB9AA*/
+  }
+
+
+}

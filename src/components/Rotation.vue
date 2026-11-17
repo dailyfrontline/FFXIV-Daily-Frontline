@@ -34,7 +34,7 @@ const currentIndex = ref(getMapIndex(today));
     justify-content: center;
     gap: 0.5rem;
     border-radius: 5px;
-    background-color: white;
+    background-color: var(--bg-card);
     padding:5px;
     flex-wrap: wrap;
 }

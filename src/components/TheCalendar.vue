@@ -11,8 +11,8 @@ const attrs = ref([
 
       style:{
         borderRadius:'10%',
-        backgroundColor: '#83C87773',
-        border: '1px solid #529746',        
+        backgroundColor: 'var(--highlight)',
+        border: '1px solid var(--highlight-border)',        
         width:'100%',
         height:'100%',
         //boxShadow:'0 2px 4px #ccc',
@@ -64,6 +64,7 @@ const goToday = () => {
 }
 #calendar {
   border-radius: 10px;
+  background-color: var(--bg-card);
 }
 .day-cell {
   text-align: center;
@@ -73,7 +74,7 @@ const goToday = () => {
   justify-content: center;
   align-items: center;
   margin-bottom: 3px;
-
+  color: var(--text-primary);
 }
 .day-number {
   font-size: clamp(8px, 4vw, 25px);
@@ -81,4 +82,24 @@ const goToday = () => {
 .map-today {
   font-size: clamp(8px, 3.5vw, 25px);
 }
+
+.vc-title {
+  background-color: #f1f1f1;/*var(--bg-primary) */
+  color: #141c15 !important;/*？不知道为什么title和arrow的颜色表现很奇怪 但是算了先不管了*/
+}
+.vc-arrow {
+  background-color: #f1f1f1;
+  color: #364538 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+.vc-title {
+  background-color: #e2ede5;/*var(--bg-primary) 505b52*/
+}
+.vc-arrow {
+  background-color: #e2ede5;/*dbdbdb*/
+}  
+
+}
+
 </style>
