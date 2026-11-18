@@ -1,5 +1,5 @@
 <template>
-    <div>{{ mapToday }}</div>
+    <div id="glance">{{ mapToday }}</div>
 
 </template>
 
@@ -10,6 +10,8 @@ const mapToday = ref(getMap(new Date()))
 </script>
 
 <style scoped>
-
+#glance {
+    font-weight: bold;
+}
 </style>
 

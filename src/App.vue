@@ -49,7 +49,6 @@ import QuickGlance from './components/QuickGlance.vue'
 .left1 {
   min-width: 0;
   font-size: 50px;
-  font-weight: bold;
 }
 
 @media (max-width: 600px){

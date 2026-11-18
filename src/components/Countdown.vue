@@ -31,6 +31,7 @@ justify-content: center;
 .countdown-text {
 text-align: left;
 flex-wrap: nowrap;
+
 }
 
 .label {
