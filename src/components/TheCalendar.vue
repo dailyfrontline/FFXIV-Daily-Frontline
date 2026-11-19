@@ -41,9 +41,8 @@ const goToday = () => {
     <VCalendar expanded borderless :attributes="attrs" ref="calendar" timezone="Asia/Shanghai" id="calendar">
       <template #day-content="{ day }">
         <div class="day-cell">
-          <div class="day-number">{{ day.day }}</div>
-          <div class="map-today">    {{ console.log(day.date) }}
-      {{ console.log(getMap(day.date)) }}{{ getMap(day.date) }}</div> 
+          <div class="day-number" :class="{ 'is-today': day.isToday }">{{ day.day }}</div>
+          <div class="map-today" :class="{ 'is-today': day.isToday }">{{ getMap(day.date) }}</div> 
         </div>
       </template>
     </VCalendar>
@@ -82,22 +81,33 @@ const goToday = () => {
 .map-today {
   font-size: clamp(8px, 3.5vw, 25px);
 }
-
+.is-today {
+  font-weight: bold;
+}
 .vc-title {
   background-color: #f1f1f1;/*var(--bg-primary) */
-  color: #141c15 !important;/*？不知道为什么title和arrow的颜色表现很奇怪 但是算了先不管了*/
+  font-size: clamp(15px, 3vw, 25px);
 }
 .vc-arrow {
   background-color: #f1f1f1;
-  color: #364538 !important;
+  /*width: clamp(5px, 2.5vw, 35px);
+  height: auto;
+  aspect-ratio: 1/1;*/
 }
+/*.vc-header {
+  grid-template-rows: auto;
+  height: auto;
+  min-height: max-content;  
+}*/
 
 @media (prefers-color-scheme: dark) {
 .vc-title {
-  background-color: #e2ede5;/*var(--bg-primary) 505b52*/
+  background-color: var(--bg-primary);/*var(--bg-primary) 505b52*/
+  color: #dbdbdb !important;
 }
 .vc-arrow {
-  background-color: #e2ede5;/*dbdbdb*/
+  background-color: var(--bg-primary);/*dbdbdb*/
+  color: #dbdbdb !important;
 }  
 
 }

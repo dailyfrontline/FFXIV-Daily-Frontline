@@ -2,7 +2,7 @@
     <div class="rotation">
         <template v-for="(map, index) in frontlineALL" :key="index" >
             <div class="rotation-unit" :class="{ 'highlight': index === currentIndex }">{{ map }}</div>
-            <span v-if="index < frontlineALL.length - 1">→</span>
+            <span v-if="index < frontlineALL.length - 1" class="arrows">→</span>
         </template>        
     </div>
 
@@ -13,10 +13,6 @@ import { ref } from 'vue';
 import { frontlineALL, getMapIndex, getMap } from '../utils/getMap';
 
 const today = new Date();
-//console.log(today)
-//console.log(getMap(today))
-//console.log(getMapIndex(today))
-//alert(window.innerWidth); ==320
 const currentIndex = ref(getMapIndex(today));
 </script>
 
@@ -45,7 +41,9 @@ const currentIndex = ref(getMapIndex(today));
   border-radius: 5px;
   white-space: nowrap;
   font-size: clamp(14px, 4.5vw, 40px);
-
   /*background-color: rgb(221, 222, 221);*/
+}
+.arrows {
+  font-size: clamp(14px, 3vw, 40px);
 }
 </style>
