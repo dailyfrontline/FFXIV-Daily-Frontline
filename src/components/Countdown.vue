@@ -39,7 +39,7 @@ flex-wrap: nowrap;
 }
 
 #timer {
-  font-size: clamp(14px, 8vw, 45px);
+  font-size: clamp(14px, 5vw, 45px);
   font-weight: bold;
 }
 </style>

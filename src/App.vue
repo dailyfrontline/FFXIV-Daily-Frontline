@@ -8,12 +8,12 @@ import QuickGlance from './components/QuickGlance.vue'
 
 <template>
     <div class="container">
-      <div class="container1">
-        <div class="left1"><QuickGlance /></div>
-        <div class="right1"><Countdown /></div>      
-      </div>
-      <div class="container2"><Rotation /></div>
-      <div class="container3"><TheCalendar /></div>
+        <div class="container1">
+          <div class="left1"><QuickGlance /></div>
+          <div class="right1"><Countdown /></div>      
+        </div>
+        <div class="container2"><Rotation /></div>
+        <div class="container3"><TheCalendar /></div>
     </div>
 
 
@@ -26,16 +26,22 @@ import QuickGlance from './components/QuickGlance.vue'
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding-inline: 24px;
+  padding-block: 16px;
+
 }
 
 .container1 {
-  display: flex;
-  gap: 10px;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: stretch;
+  gap: 8px;
   min-width: 0;
 }
 
 .left1, .right1 {
-  border: 1px;
+
   border-radius: 10px;
   background-color: var(--bg-card);
   flex: 1;
@@ -53,7 +59,7 @@ import QuickGlance from './components/QuickGlance.vue'
 
 @media (max-width: 600px){
   .left1 {
-    font-size: clamp(14px, 12vw, 45px);
+    font-size: clamp(14px, 12vw, 50px);
   }
   #app {
     padding: 0 2rem;

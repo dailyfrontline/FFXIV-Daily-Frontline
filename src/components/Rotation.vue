@@ -29,7 +29,7 @@ const currentIndex = ref(getMapIndex(today));
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--bg-card);
     padding:5px;
     flex-wrap: wrap;
