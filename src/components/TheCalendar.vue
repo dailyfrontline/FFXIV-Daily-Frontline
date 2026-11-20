@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { getMap } from '../utils/getMap'
 import { ref } from 'vue'
-
+import CardTemplate from './CardTemplate.vue';
 
 const attrs = ref([
   {
@@ -37,16 +37,16 @@ const goToday = () => {
 
 
 <template> 
-
+<CardTemplate>
     <VCalendar expanded borderless :attributes="attrs" ref="calendar" timezone="Asia/Shanghai" id="calendar">
       <template #day-content="{ day }">
         <div class="day-cell">
           <div class="day-number" :class="{ 'is-today': day.isToday }">{{ day.day }}</div>
-          <div class="map-today" :class="{ 'is-today': day.isToday }">{{ getMap(day.date) }}</div> 
+          <div class="day-map" :class="{ 'is-today': day.isToday }">{{ getMap(day.date) }}</div> 
         </div>
       </template>
     </VCalendar>
-  
+</CardTemplate>
 
   <div class="wrapper">
     <div @click="goToday">>&nbsp;跳转今天</div>
@@ -59,6 +59,7 @@ const goToday = () => {
 .wrapper {
   /*display: flex;
   justify-content: flex-start;*/
+  margin-top: 4px;
   font-size: clamp(8px, 4vw, 30px);
 }
 #calendar {
@@ -66,20 +67,23 @@ const goToday = () => {
   background-color: var(--bg-card);
 }
 .day-cell {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   min-height: 0px;
   height: auto;
   /*background-color:rgba(131, 200, 119, 0.452);/*为了调试的时候看着方便*/
   justify-content: center;
   align-items: center;
-  margin-bottom: 3px;
+  margin-block: 4px;
   color: var(--text-primary);
 }
 .day-number {
   font-size: clamp(8px, 4vw, 25px);
 }
-.map-today {
+.day-map {
   font-size: clamp(8px, 3.5vw, 25px);
+  margin-top: -4px;
 }
 .is-today {
   font-weight: bold;
@@ -109,6 +113,9 @@ const goToday = () => {
   background-color: var(--bg-primary);/*dbdbdb*/
   color: #dbdbdb !important;
 }  
+.vc-weekday {
+  color: #dbdbdb !important;
+}
 
 }
 

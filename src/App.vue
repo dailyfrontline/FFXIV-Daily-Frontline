@@ -3,17 +3,20 @@ import TheCalendar from './components/TheCalendar.vue'
 import Countdown from './components/Countdown.vue'
 import Rotation from './components/Rotation.vue'
 import QuickGlance from './components/QuickGlance.vue'
-
+import CardTemplate from './components/CardTemplate.vue';
 </script>
 
 <template>
     <div class="container">
         <div class="container1">
-          <div class="left1"><QuickGlance /></div>
-          <div class="right1"><Countdown /></div>      
+          <CardTemplate><QuickGlance id="glance-block"/></CardTemplate>
+          <CardTemplate><Countdown id="countdown-block"/></CardTemplate>          
+          <!--<div class="left1"><QuickGlance /></div>
+          <div class="right1"><Countdown /></div> -->     
         </div>
-        <div class="container2"><Rotation /></div>
+        <div class="container2"><CardTemplate><Rotation id="rotation-block"/></CardTemplate></div>
         <div class="container3"><TheCalendar /></div>
+        
     </div>
 
 
@@ -39,31 +42,27 @@ import QuickGlance from './components/QuickGlance.vue'
   gap: 8px;
   min-width: 0;
 }
-
-.left1, .right1 {
-
-  border-radius: 10px;
-  background-color: var(--bg-card);
-  flex: 1;
-  text-align: center;
-  min-height: 120px;
+#rotation-block {
+padding-block: 8px;
+}
+#glance-block, #countdown-block {
   display: flex;
-  justify-content: center;
   align-items: center;
+  min-height: 120px;
 }
 
-.left1 {
+#glance-block {
   min-width: 0;
   font-size: 50px;
+  font-weight: bold;
+
 }
 
 @media (max-width: 600px){
-  .left1 {
+  #glance-block {
     font-size: clamp(14px, 12vw, 50px);
   }
-  #app {
-    padding: 0 2rem;
-  }
+
 }
 
 
