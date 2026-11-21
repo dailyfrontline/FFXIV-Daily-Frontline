@@ -27,7 +27,6 @@ const timeLeft = computed(() => {
 .countdown {
 display: flex;
 justify-content: flex-start;
-outline: 1px solid red;
 width: 100%;
 }
 .countdown-text {
@@ -35,7 +34,6 @@ text-align: center;
 flex-wrap: nowrap;
 width: 90%;
 margin-left: 5%;
-outline: 1px solid blue;
 
 }
 
@@ -48,6 +46,5 @@ outline: 1px solid blue;
   font-size: clamp(14px, 8vw, 45px);
   font-weight: bold;
   font-variant-numeric: tabular-nums !important;
-  color:blue;
 }
 </style>
