@@ -36,6 +36,7 @@ flex-wrap: nowrap;
 
 .label {
   font-size: clamp(14px, 6vw, 45px);
+  font-weight: 400 !important;
 }
 
 #timer {

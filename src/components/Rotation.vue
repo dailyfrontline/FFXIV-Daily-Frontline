@@ -17,13 +17,6 @@ const currentIndex = ref(getMapIndex(today));
 </script>
 
 <style scoped>
-.highlight {
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid #529746;
-    background-color: #83C87773;
-    padding-inline: 5px;
-}
 .rotation {
     display: flex;
     align-items: center;
@@ -41,9 +34,18 @@ const currentIndex = ref(getMapIndex(today));
   border-radius: 5px;
   white-space: nowrap;
   font-size: clamp(14px, 4.5vw, 40px);
+  font-weight: 400 !important;
   /*background-color: rgb(221, 222, 221);*/
 }
 .arrows {
   font-size: clamp(14px, 3vw, 40px);
+  font-weight: 400 !important;
+}
+.highlight {
+    font-weight: bold !important;
+    border-radius: 5px;
+    border: 1px solid #529746;
+    background-color: #83C87773;
+    padding-inline: 5px;
 }
 </style>
