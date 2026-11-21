@@ -31,7 +31,7 @@ justify-content: center;
 .countdown-text {
 text-align: left;
 flex-wrap: nowrap;
-
+width: 100%;
 }
 
 .label {
@@ -43,6 +43,6 @@ flex-wrap: nowrap;
   font-size: clamp(14px, 8vw, 45px);
   font-weight: bold;
   font-variant-numeric: tabular-nums;
-  color:red;
+  color:blue;
 }
 </style>
