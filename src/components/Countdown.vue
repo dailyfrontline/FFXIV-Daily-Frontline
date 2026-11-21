@@ -26,7 +26,7 @@ const timeLeft = computed(() => {
 <style scoped>
 .countdown {
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 outline: 1px solid red;
 }
 .countdown-text {
