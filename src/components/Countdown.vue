@@ -42,6 +42,7 @@ flex-wrap: nowrap;
 #timer {
   font-size: clamp(14px, 8vw, 45px);
   font-weight: bold;
-    font-variant-numeric: tabular-nums;
+  font-variant-numeric: tabular-nums;
+  color:red;
 }
 </style>
