@@ -52,7 +52,6 @@ padding-block: 8px;
 }
 #glance-block, #countdown-block {
   display: flex;
-  align-items: center;
   min-height: 120px;
 }
 
@@ -60,9 +59,12 @@ padding-block: 8px;
   min-width: 0;
   font-size: 50px;
   font-weight: bold;
-
+  align-items: center;
 }
-
+#countdown-block {
+  align-items: center;
+  justify-content: flex-start;
+}
 @media (max-width: 600px){
   #glance-block {
     font-size: clamp(14px, 12vw, 50px);
