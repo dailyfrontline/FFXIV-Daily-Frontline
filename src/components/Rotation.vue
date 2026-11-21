@@ -26,6 +26,8 @@ const currentIndex = ref(getMapIndex(today));
     background-color: var(--bg-card);
     padding:5px;
     flex-wrap: wrap;
+    font-weight: 500 !important;
+
 }
 .rotation span{
     margin: 0 -5px;
@@ -34,12 +36,10 @@ const currentIndex = ref(getMapIndex(today));
   border-radius: 5px;
   white-space: nowrap;
   font-size: clamp(14px, 4.5vw, 40px);
-  font-weight: 400 !important;
   /*background-color: rgb(221, 222, 221);*/
 }
 .arrows {
   font-size: clamp(14px, 3vw, 40px);
-  font-weight: 400 !important;
 }
 .highlight {
     font-weight: bold !important;
