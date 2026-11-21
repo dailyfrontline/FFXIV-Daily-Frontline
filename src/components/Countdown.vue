@@ -46,6 +46,6 @@ outline: 1px solid blue;
   font-size: clamp(14px, 8vw, 45px);
   font-weight: bold;
   font-variant-numeric: tabular-nums;
-  color:red;
+  color:blue;
 }
 </style>
