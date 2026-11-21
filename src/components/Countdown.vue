@@ -27,11 +27,14 @@ const timeLeft = computed(() => {
 .countdown {
 display: flex;
 justify-content: center;
+outline: 1px solid red;
 }
 .countdown-text {
 text-align: left;
 flex-wrap: nowrap;
 width: 100%;
+outline: 1px solid blue;
+
 }
 
 .label {
