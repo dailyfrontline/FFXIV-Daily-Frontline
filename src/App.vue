@@ -35,11 +35,16 @@ import CardTemplate from './components/CardTemplate.vue';
 }
 
 .container1 {
-  /*display: flex;*/
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  align-items: stretch;
+  /*display: grid;*/
+  display: flex;
+  /*grid-template-columns: 2fr 2fr;*/
+  /*align-items: stretch;*/
   gap: 8px;
+  min-width: 0;
+}
+.container1 > * {
+  width: calc((100% - 8px) / 2);
+  flex: none;
   min-width: 0;
 }
 #rotation-block {
