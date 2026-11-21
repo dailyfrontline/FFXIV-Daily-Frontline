@@ -39,7 +39,7 @@ outline: 1px solid blue;
 
 .label {
   font-size: clamp(14px, 6vw, 45px);
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 #timer {
@@ -47,6 +47,6 @@ outline: 1px solid blue;
   font-weight: bold;
   font-variant-numeric: tabular-nums !important;
   font-family: monospace;
-  color:blueviolet;
+  color:blue;
 }
 </style>
